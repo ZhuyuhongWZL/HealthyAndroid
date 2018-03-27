@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.mrjk.demo.food.ApplyDoctorEntity" table="apply_doctor" schema="dh">
+        <id name="applyId" column="apply_id"/>
+        <property name="name" column="name"/>
+        <property name="createDate" column="create_date"/>
+        <property name="state" column="state"/>
+        <property name="star" column="star"/>
+        <property name="criticCount" column="critic_count"/>
+        <property name="introduction" column="introduction"/>
+    </class>
+</hibernate-mapping>

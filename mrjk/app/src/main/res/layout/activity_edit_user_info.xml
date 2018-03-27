@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/view_user"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/head"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:src="@drawable/profile"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="#FF000000"/>
+
+
+            </RelativeLayout>
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+
+
+
+            <TextView
+                android:id="@+id/user_name"
+                style="@style/TxtTitle"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/neckname"
+                android:drawableRight="@drawable/right"
+                android:text="昵称" />
+
+
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+            <TextView
+                android:id="@+id/user_sex"
+                style="@style/TxtTitle"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/sex"
+                android:drawableRight="@drawable/right"
+                android:text="性别" />
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <TextView
+                android:id="@+id/user_birthday"
+                style="@style/TxtTitle"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/birthday"
+                android:drawableRight="@drawable/right"
+                android:text="生日" />
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+
+            <TextView
+                android:id="@+id/user_change_password"
+                style="@style/TxtTitle"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/password"
+                android:drawableRight="@drawable/right"
+                android:text="修改密码" />
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <TextView
+                android:id="@+id/save_info"
+                style="@style/TxtTitle"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:background="@color/current_day_color"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:text="保存" />
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/dh</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">123456</property>
+
+        <mapping class="com.mrjk.demo.weather.CityEntity"/>
+        <mapping resource="com/mrjk/demo/weather/CityEntity.hbm.xml"/>
+
+        <mapping class="com.mrjk.demo.food.ApplyDoctorEntity"/>
+        <mapping resource="com/mrjk/demo/food/ApplyDoctorEntity.hbm.xml"/>
+
+        <mapping resource="com/mrjk/demo/food/DoctorAssessmentEntity.hbm.xml"/>
+        <mapping class="com.mrjk.demo.food.DoctorAssessmentEntity"/>
+        <mapping resource="com/mrjk/demo/food/FoodEntity.hbm.xml"/>
+        <mapping class="com.mrjk.demo.food.FoodEntity"/>
+        <mapping resource="com/mrjk/demo/food/FoodUploadEntity.hbm.xml"/>
+        <mapping class="com.mrjk.demo.food.FoodUploadEntity"/>
+
+        <mapping resource="com/mrjk/demo/userdata/UserEntity.hbm.xml"/>
+        <mapping class="com.mrjk.demo.userdata.UserEntity"/>
+        <mapping class="com.mrjk.demo.userdata.UserDataEntity"/>
+        <mapping resource="com/mrjk/demo/userdata/UserDataEntity.hbm.xml"/>
+
+        <mapping resource="com/mrjk/demo/platform/bean/TalkMessageEntity.hbm.xml"/>
+        <mapping class="com.mrjk.demo.platform.bean.TalkMessageEntity"/>
+        <mapping class="com.mrjk.demo.platform.bean.UserEntity"/>
+        <mapping resource="com/mrjk/demo/platform/bean/UserEntity.hbm.xml"/>
+        <mapping resource="com/mrjk/demo/liu/entity/UserEntity.hbm.xml"/>
+        <mapping class="com.mrjk.demo.liu.entity.UserEntity"/>
+        <mapping resource="com/mrjk/demo/doctor/DoctorUserEntity.hbm.xml"/>
+        <mapping class="com.mrjk.demo.doctor.DoctorUserEntity"/>
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>

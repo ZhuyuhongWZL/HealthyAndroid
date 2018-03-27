@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.mrjk.demo.weather.CityEntity" table="city" schema="dh">
+        <id name="id" column="ID"/>
+        <property name="cityName" column="cityName"/>
+        <property name="cityEn" column="cityEN"/>
+        <property name="townId" column="townID"/>
+        <property name="townName" column="townName"/>
+        <property name="townEn" column="townEN"/>
+    </class>
+</hibernate-mapping>

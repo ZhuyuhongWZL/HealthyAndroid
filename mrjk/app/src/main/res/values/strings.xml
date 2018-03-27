@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">mrjk</string>
+    <string name="weight">身高体重</string>
+    <string name="food_record">饮食记录</string>
+    <string name="health_report">健康报告</string>
+    <string name="doctor_apply">从医资质申请</string>
+    <string name="user_info">用户资料</string>
+    <string name="settings">设置</string>
+
+
+    <string name="login_success">登录成功</string>
+    <string name="login">登录</string>
+    <string name="Username">用户名</string>
+    <string name="Password">密码</string>
+    <string name="Email">邮箱</string>
+    <string name="forgot_your_password">忘记密码 ?</string>
+    <string name="go">登录</string>
+    <string name="repeat_password">重复密码</string>
+    <string name="next">注册</string>
+    <string name="register">注册</string>
+
+    <string name="lorem_ipsum_short">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </string>
+    <string name="lorem_ipsum_long">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </string>
+
+    <string-array name="array_names">
+        <item>"Anastasia Druzhinina"</item>
+        <item>"Andriy Hristyan"</item>
+        <item>"Dmitriy Dovbnya"</item>
+        <item>"Dmitry Denisenko"</item>
+        <item>"Eduard Baev"</item>
+        <item>"Iliya Bershadskiy"</item>
+        <item>"Kirill Penzykov"</item>
+        <item>"Konstantin Rudenko"</item>
+        <item>"Oleksii Shliama"</item>
+        <item>"Pavel Apisov"</item>
+        <item>"Vadim Ooleynik"</item>
+    </string-array>
+
+</resources>

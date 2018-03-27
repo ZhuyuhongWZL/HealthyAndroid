@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/view_user"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/setting_item_selector">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/head"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/profile"
+                    app:civ_border_width="0dp"
+                    app:civ_border_color="#FF000000"/>
+                <TextView
+                    android:textSize="18.0dip"
+                    android:id="@+id/user_name"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="菲儿" />
+                <TextView
+                    android:id="@+id/user_msg"
+                    android:textSize="14.0dip"
+                    style="@style/txt_ContextStyle1"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/user_name"
+                    android:layout_toRightOf="@+id/head"
+                    android:text="账号：dada20150625" />
+
+                <ImageView
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right" />
+
+                <ImageView
+                    android:id="@+id/iv_sex"
+                    android:layout_toRightOf="@+id/user_name"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_sex_female" />
+            </RelativeLayout>
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+
+
+
+            <TextView
+                android:id="@+id/user_weight"
+                style="@style/TxtTitle"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/weight"
+                android:drawableRight="@drawable/right"
+                android:text="@string/weight" />
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+            <TextView
+                android:id="@+id/user_food"
+                style="@style/TxtTitle"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/food"
+                android:drawableRight="@drawable/right"
+                android:text="@string/food_record" />
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <TextView
+                android:id="@+id/user_doctor"
+                style="@style/TxtTitle"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/doctor"
+                android:drawableRight="@drawable/right"
+                android:text="@string/doctor_apply" />
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+            <TextView
+                android:id="@+id/user_health"
+                style="@style/TxtTitle"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/health"
+                android:drawableRight="@drawable/right"
+                android:text="@string/health_report" />
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+
+            <TextView
+                android:id="@+id/user_info"
+                style="@style/TxtTitle"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/user_info"
+                android:drawableRight="@drawable/right"
+                android:text="@string/user_info" />
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+
+            <TextView
+                android:id="@+id/user_setting"
+                style="@style/TxtTitle"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_item_selector"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/settings"
+                android:drawableRight="@drawable/right"
+                android:text="@string/settings" />
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

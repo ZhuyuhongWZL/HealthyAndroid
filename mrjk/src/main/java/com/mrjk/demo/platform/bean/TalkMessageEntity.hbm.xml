@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.mrjk.demo.platform.bean.TalkMessageEntity" table="talk_message" schema="dh">
+        <id name="id" column="id"/>
+        <property name="ffrom" column="ffrom"/>
+        <property name="tto" column="tto"/>
+        <property name="content" column="content"/>
+        <property name="time" column="time"/>
+    </class>
+</hibernate-mapping>
