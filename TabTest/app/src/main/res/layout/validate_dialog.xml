@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/black2">
+    <EditText
+        android:id="@+id/et_validate"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:hint="请输入验证码"
+        android:textSize="40px"
+        android:inputType="number"
+        android:maxLength="6"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/user_validate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="验证"
+        android:background="@color/red6"
+        />
+
+</LinearLayout>

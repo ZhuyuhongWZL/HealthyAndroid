@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.DietActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/diet_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/link_color">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/diet_label"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="25dp"
+                android:layout_weight="2"/>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/diet_image"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/date"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+                <TextView
+                    android:id="@+id/diet_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/diet_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.a67371.tabtest.ui.draw.DietView
+                android:background="@drawable/diet_bg"
+                android:id="@+id/diet_view"
+                android:layout_width="match_parent"
+                android:layout_height="268dp"/>
+
+            <View
+                android:background="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="10dip"
+                android:visibility="gone"/>
+
+            <ListView
+                android:id="@+id/diet_food"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:visibility="gone">
+
+            </ListView>
+
+            <ImageView
+                android:id="@+id/no_diet_image"
+                android:layout_width="match_parent"
+                android:layout_height="596px"
+                android:visibility="gone"
+                android:background="@drawable/no_diet" />
+            <View
+                android:background="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="10dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+                <Button
+                    android:id="@+id/diet_button1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="200dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/diet_button1"/>
+
+                <Button
+                    android:id="@+id/diet_button2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="200dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/diet_button2"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

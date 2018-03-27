@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:leon="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.SettingActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/chat_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/link_color" >
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/item_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:isShowRightText="true"
+        leon:leftIcon="@drawable/history"
+        leon:leftText="我的消息"
+        leon:rightText="99+"
+        leon:rightTextColor="@color/gray"
+        leon:rightTextSize="14"/>
+
+    <com.leon.lib.settingview.LSettingItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIcon="@drawable/shoucang"
+        leon:leftText="我的收藏"
+        />
+
+    <com.leon.lib.settingview.LSettingItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIcon="@drawable/honor"
+        leon:leftText="我的荣誉"
+        />
+
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/item_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/MyCheckBox"
+        leon:leftIcon="@drawable/subscribe"
+        leon:leftText="订阅我们"
+        leon:rightStyle="iconCheck"/>
+
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/item_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/MyCheckBox"
+        leon:isShowUnderLine="false"
+        leon:leftIcon="@drawable/ic_action_communication_location_on"
+        leon:leftText="我的位置"
+        leon:rightStyle="iconSwitch"/>
+
+    <com.leon.lib.settingview.LSettingItem
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        leon:isShowUnderLine="false"
+        leon:leftText="关于我们"
+        />
+
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <TextView
+        android:id="@+id/logout"
+        style="@style/TxtTitle"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:background="@color/current_day_color"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:text="退出" />
+</LinearLayout>

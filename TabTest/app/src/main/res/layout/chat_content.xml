@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/chat_image_left"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true" />
+
+    <RelativeLayout
+        android:id="@+id/chat_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/chat_image_left"
+        android:layout_marginRight="60dp">
+        <TextView
+            android:id="@+id/chat_time_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textColor="@color/gray"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:id="@+id/chat_content_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="@drawable/chat_left"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/chat_time_left"/>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/chat_image_right"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"/>
+
+    <RelativeLayout
+        android:id="@+id/chat_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/chat_image_right"
+        android:layout_marginLeft="60dp">
+        <TextView
+            android:id="@+id/chat_time_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textColor="@color/gray"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:id="@+id/chat_content_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="@drawable/chat_right"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/chat_time_right"/>
+    </RelativeLayout>
+
+</RelativeLayout>

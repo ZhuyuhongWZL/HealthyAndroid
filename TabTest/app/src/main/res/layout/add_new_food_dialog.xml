@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/grey">
+    <EditText
+        android:id="@+id/add_new_food_name"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:hint="请输入食物名称"
+        android:textSize="40px"
+        android:layout_margin="20dp" />
+
+    <EditText
+        android:id="@+id/add_new_food_alias"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:hint="请输入食物别名"
+        android:textSize="40px"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <EditText
+        android:id="@+id/add_new_food_karori"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:hint="请输入每100克食物的卡路里数"
+        android:textSize="40px"
+        android:inputType="number"
+        android:maxLength="4"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/add_new_food_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="确定"/>
+
+</LinearLayout>
